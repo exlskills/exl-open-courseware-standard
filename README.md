@@ -2,25 +2,17 @@
 
 Welcome to the home of EOCS. This standard is currently a work-in-progress. To learn more, continue reading our README and star this repo on GitHub.
 
-**Course**
 
-   	index.yaml
-
-**   	****Chapters**
-
-**          		****Chapter Name (000_chaptername)**
-
-**                 		Sequentials**
-
-**                        		****Sequential Name (000_sequentialname)**
-
-**                                			**index.yaml
-
-**                                			****Vertical Name (000_verticalname)**
+**Course** <br />
+&#8627; index.yaml<br />
+&#160;&#160;&#160;&#160;**Chapters**<br />
+&#160;&#160;&#160;&#160;&#8627; **Chapter Name (000_chaptername)**<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; **Sequentials**<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; **Sequential Name (000_sequentialname)**<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; index.yaml<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**Vertical Name (000_verticalname)**<br />
 
 **Course:**
-
-** **
 
 <table>
   <tr>
@@ -92,11 +84,7 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
 </table>
 
 
-** **
-
 **Chapter:**
-
-** **
 
 <table>
   <tr>
@@ -120,13 +108,7 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
 </table>
 
 
-** **
-
-** **
-
 **Sequential:**
-
-** **
 
 <table>
   <tr>
@@ -150,11 +132,7 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
 </table>
 
 
-** **
-
 **Vertical:**
-
-** **
 
 <table>
   <tr>
