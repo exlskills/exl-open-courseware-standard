@@ -124,8 +124,8 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
   <tr>
     <td>sequential url_name</td>
     <td>markdown file</td>
-    <td>Optional</td>
-    <td>Generated from parent directory name</td>
+    <td>Required</td>
+    <td>None</td>
   </tr>
 </table>
 
@@ -148,8 +148,8 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
   <tr>
     <td>vertical url_name</td>
     <td>markdown file</td>
-    <td>Optional</td>
-    <td>Generated from parent directory name</td>
+    <td>Required</td>
+    <td>None</td>
   </tr>
 </table>
 
