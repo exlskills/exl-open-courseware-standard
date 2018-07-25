@@ -5,12 +5,10 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
 
 **course** <br />
 &#8627; index.yaml<br />
-&#160;&#160;&#160;&#160;**chapters**<br />
-&#160;&#160;&#160;&#160;&#8627; **chapter_name (000_chaptername)**<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; **sequentials**<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; **sequential_name (000_sequentialname)**<br />
+&#160;&#160;&#160;&#160;**chapter_name (00_chaptername)**<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; **sequential_name (00_sequentialname)**<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; index.yaml<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**vertical_name (000_verticalname)**<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**vertical_name (00_verticalname)**<br />
 
 **Course:**
 
@@ -34,6 +32,24 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
     <td>true</td>
   </tr>
   <tr>
+    <td>chapter url_name</td>
+    <td>markdown file</td>
+    <td>Required</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>course</td>
+    <td>markdown file</td>
+    <td>Required</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>course url_name</td>
+    <td>markdown file</td>
+    <td>Required</td>
+    <td>"course"</td>
+  </tr>
+  <tr>
     <td>course_image</td>
     <td>index.yaml</td>
     <td>Required</td>
@@ -52,10 +68,22 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
     <td>None</td>
   </tr>
   <tr>
+    <td>grade_cutoffs</td>
+    <td>index.yaml</td>
+    <td>Required</td>
+    <td>0.5</td>
+  </tr>
+  <tr>
     <td>language</td>
     <td>index.yaml</td>
     <td>Required</td>
     <td>en</td>
+  </tr>
+  <tr>
+    <td>org</td>
+    <td>markdown file</td>
+    <td>Optional</td>
+    <td>None</td>
   </tr>
   <tr>
     <td>self_paced</td>
@@ -75,12 +103,6 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
     <td>Required</td>
     <td>None</td>
   </tr>
-  <tr>
-    <td>grade_cutoffs</td>
-    <td>index.yaml</td>
-    <td>Required</td>
-    <td>0.5</td>
-  </tr>
 </table>
 
 
@@ -94,7 +116,7 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
     <td>Default</td>
   </tr>
   <tr>
-    <td>display_name</td>
+    <td>chapter display_name</td>
     <td>markdown file</td>
     <td>Optional</td>
     <td>Generated from parent directory name</td>
@@ -118,7 +140,7 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
     <td>Default</td>
   </tr>
   <tr>
-    <td>display_name</td>
+    <td>sequential display_name</td>
     <td>markdown file</td>
     <td>Optional</td>
     <td>Generated from parent directory name</td>
@@ -142,31 +164,13 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
     <td>Default</td>
   </tr>
   <tr>
-    <td>display_name</td>
+    <td>vertical display_name</td>
     <td>markdown file</td>
     <td>Optional</td>
     <td>Generated from parent directory name</td>
   </tr>
   <tr>
-    <td>problem url_name</td>
-    <td>markdown file</td>
-    <td>Optional</td>
-    <td>Generated from parent directory name</td>
-  </tr>
-  <tr>
-    <td>html url_name</td>
-    <td>markdown file</td>
-    <td>Optional</td>
-    <td>Generated from parent directory name</td>
-  </tr>
-  <tr>
-    <td>IDE code </td>
-    <td>markdown file</td>
-    <td>Optional</td>
-    <td>Generated from parent directory name</td>
-  </tr>
-  <tr>
-    <td>grade weight</td>
+    <td>grade_weight</td>
     <td>index.yaml</td>
     <td>Required</td>
     <td>1</td>
