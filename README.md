@@ -2,13 +2,32 @@
 
 Welcome to the home of EOCS. This standard is currently a work-in-progress. To learn more, continue reading our README and star this repo on GitHub.
 
+**File Structures**<br/>
 
-**course** <br />
-&#8627; index.yaml<br />
-&#160;&#160;&#160;&#160;**chapter_name (00_chaptername)**<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; **sequential_name (00_sequentialname)**<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8627; index.yaml<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**vertical_name (00_verticalname)**<br />
+Default:
+
+```
+course
+├── index.yaml
+└── chapter_name (00_chaptername)
+    └── sequential_name (00_sequentialname)
+        ├── index.yaml
+        └── vertical_name(00_verticalname)
+```
+
+Optional:
+
+```
+course
+├── index.yaml
+└── chapter_name (00_chaptername)
+    └── sequential_name (00_sequentialname)
+        ├── index.yaml
+        └── vertical_name(00_verticalname)
+            ├── index.yaml
+            └── index.md
+```
+<br/>
 
 **Course:**
 
