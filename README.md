@@ -2,7 +2,7 @@
 
 Welcome to the home of EOCS. This standard is currently a work-in-progress. To learn more, continue reading our README and star this repo on GitHub.
 
-**File Structures**<br/>
+**File Structure**<br/>
 
 Default:
 
@@ -10,9 +10,10 @@ Default:
 course
 ├── index.yaml
 └── chapter_name (00_chaptername)
+    ├── index.yaml
     └── sequential_name (00_sequentialname)
         ├── index.yaml
-        └── vertical_name(00_verticalname)
+        └── vertical_name.md (00_verticalname)
 ```
 
 Optional:
@@ -21,13 +22,24 @@ Optional:
 course
 ├── index.yaml
 └── chapter_name (00_chaptername)
+    ├── index.yaml
     └── sequential_name (00_sequentialname)
         ├── index.yaml
-        └── vertical_name(00_verticalname)
+        └── vertical_name (00_verticalname)
             ├── index.yaml
-            └── index.md
+            ├── index.md
+            ├── index.repl
+            └── index.repl.yaml
 ```
-<br/>
+Formatting verticals:
+
+If the vertical contains more than 1 block, the standard format ```{index}_{name}.{ext}``` should be used to ensure that the ordering is correct on import/conversion. 
+
+Setting up REPL:
+
+Inline code for verticals are setup with REPL, where each ```index.repl.yaml``` file is considered a block. The ```index.repl``` folder should contain a "source" directory and a "test" directory for the inline code.
+
+<br />
 
 **Course:**
 
@@ -39,32 +51,14 @@ course
     <td>Default</td>
   </tr>
   <tr>
-    <td>advanced_modules</td>
-    <td>index.yaml</td>
-    <td>Required</td>
-    <td>None</td>
-  </tr>
-  <tr>
-    <td>cert_html_view_enabled</td>
-    <td>index.yaml</td>
-    <td>Required</td>
-    <td>true</td>
-  </tr>
-  <tr>
-    <td>chapter url_name</td>
-    <td>markdown file</td>
-    <td>Required</td>
-    <td>None</td>
-  </tr>
-  <tr>
     <td>course</td>
-    <td>markdown file</td>
+    <td>index.yaml</td>
     <td>Required</td>
     <td>None</td>
   </tr>
   <tr>
     <td>course url_name</td>
-    <td>markdown file</td>
+    <td>index.yaml</td>
     <td>Required</td>
     <td>"course"</td>
   </tr>
@@ -76,21 +70,15 @@ course
   </tr>
   <tr>
     <td>display_name</td>
-    <td>markdown file</td>
+    <td>index.yaml</td>
     <td>Optional</td>
     <td>Generated from parent directory name</td>
   </tr>
-  <tr>
-    <td>enrollment_start</td>
+    <tr>
+    <td>est_minutes</td>
     <td>index.yaml</td>
-    <td>Required</td>
+    <td>Optional</td>
     <td>None</td>
-  </tr>
-  <tr>
-    <td>grade_cutoffs</td>
-    <td>index.yaml</td>
-    <td>Required</td>
-    <td>0.5</td>
   </tr>
   <tr>
     <td>language</td>
@@ -100,26 +88,8 @@ course
   </tr>
   <tr>
     <td>org</td>
-    <td>markdown file</td>
+    <td>index.yaml</td>
     <td>Optional</td>
-    <td>None</td>
-  </tr>
-  <tr>
-    <td>self_paced</td>
-    <td>index.yaml</td>
-    <td>Required</td>
-    <td>true</td>
-  </tr>
-  <tr>
-    <td>start</td>
-    <td>index.yaml</td>
-    <td>Required</td>
-    <td>None</td>
-  </tr>
-  <tr>
-    <td>wiki slug</td>
-    <td>index.yaml</td>
-    <td>Required</td>
     <td>None</td>
   </tr>
 </table>
@@ -136,13 +106,13 @@ course
   </tr>
   <tr>
     <td>chapter display_name</td>
-    <td>markdown file</td>
+    <td>index.yaml</td>
     <td>Optional</td>
     <td>Generated from parent directory name</td>
   </tr>
   <tr>
-    <td>sequential url_name</td>
-    <td>markdown file</td>
+    <td>chapter url_name</td>
+    <td>index.yaml</td>
     <td>Required</td>
     <td>None</td>
   </tr>
@@ -159,14 +129,26 @@ course
     <td>Default</td>
   </tr>
   <tr>
+    <td>format</td>
+    <td>index.yaml</td>
+    <td>Optional</td>
+    <td>Homework</td>
+  </tr>
+  <tr>
+    <td>graded</td>
+    <td>index.yaml</td>
+    <td>Optional</td>
+    <td>true</td>
+  </tr>
+  <tr>
     <td>sequential display_name</td>
-    <td>markdown file</td>
+    <td>index.yaml</td>
     <td>Optional</td>
     <td>Generated from parent directory name</td>
   </tr>
   <tr>
-    <td>vertical url_name</td>
-    <td>markdown file</td>
+    <td>sequential url_name</td>
+    <td>index.yaml</td>
     <td>Required</td>
     <td>None</td>
   </tr>
@@ -183,14 +165,44 @@ course
     <td>Default</td>
   </tr>
   <tr>
+    <td>api_version</td>
+    <td>index.repl</td>
+    <td>Optional</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>environment</td>
+    <td>index.repl</td>
+    <td>Optional</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>height</td>
+    <td>index.repl</td>
+    <td>Optional</td>
+    <td>500px</td>
+  </tr>
+  <tr>
+    <td>src_path</td>
+    <td>index.repl</td>
+    <td>Optional</td>
+    <td>None</td>
+  </tr>
+    <tr>
+    <td>test_path</td>
+    <td>index.repl</td>
+    <td>Optional</td>
+    <td>None</td>
+  </tr>
+  <tr>
     <td>vertical display_name</td>
-    <td>markdown file</td>
+    <td>index.yaml</td>
     <td>Optional</td>
     <td>Generated from parent directory name</td>
   </tr>
   <tr>
-    <td>grade_weight</td>
+    <td>vertical url_name</td>
     <td>index.yaml</td>
     <td>Required</td>
-    <td>1</td>
+    <td>None</td>
   </tr>
