@@ -2,7 +2,8 @@
 
 Welcome to the home of EOCS. This standard is currently a work-in-progress. To learn more, continue reading our README and star this repo on GitHub.
 
-**File Structure**<br/>
+## File Structure
+There are two main file structures for EOCS, the default and the optional file structure. The default file structure is designed for simple courses while the optional file structure is designed for courses that are more complex. The folder structures are shown below.
 
 Default:
 
@@ -31,15 +32,18 @@ course
             ├── index.repl
             └── index.repl.yaml
 ```
-Formatting verticals:
+
+The optional file structure requires a different style of formatting as well as a separate folder for each vertical. 
 
 If the vertical contains more than 1 block, the standard format ```{index}_{name}.{ext}``` should be used to ensure that the ordering is correct on import/conversion. 
 
-Setting up REPL:
-
 Inline code for verticals are setup with REPL, where each ```index.repl.yaml``` file is considered a block. The ```index.repl``` folder should contain a "source" directory and a "test" directory for the inline code.
 
-<br />
+Use our [AP Java Course](https://github.com/exlskills/ap-java-course) as reference for the optional file structure.
+
+
+## Index Files
+Each course contains multiple index.yaml files that contain different information for each sublevel. The table below contains a brief description of each attribute and where it is located inside the folder structure.
 
 **Course:**
 
