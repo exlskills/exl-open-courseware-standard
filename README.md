@@ -2,6 +2,10 @@
 
 Welcome to the home of EOCS. This standard is currently a work-in-progress. To learn more, continue reading our README and star this repo on GitHub.
 
+## About EXLskills
+
+[EXLskills](https://exlskills.com) is on a mission to change education with an open-source online digital skills learning, certification, and peer-to-peer instruction platform that is committed to offering premium-quality courseware for 100% free via our open-source courseware methodology. Our courses are developed using the content in this repository and are then imported/pushed to [EXLskills.com](https://exlskills.com) with the [eocsutil](https://github.com/exlskills/eocsutil) tool. This process is 100% transparent, free, and open-source.
+
 ## File Structure
 There are two main file structures for EOCS, the default and the optional file structure. The default file structure is designed for simple courses while the optional file structure is designed for courses that are more complex. The folder structures are shown below.
 
