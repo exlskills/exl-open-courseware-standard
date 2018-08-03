@@ -37,17 +37,17 @@ course
             └── index.repl.yaml
 ```
 
-The optional file structure requires a different style of formatting as well as a separate folder for each vertical. 
+The optional file structure requires a different style of formatting as well as a separate folder for each vertical.
 
 If the vertical contains more than 1 block, the standard format ```{index}_{name}.{ext}``` should be used to ensure that the ordering is correct on import/conversion. 
 
-Inline code for verticals are setup with REPL, where each ```index.repl.yaml``` file is considered a block. The ```index.repl``` folder should contain a "source" directory and a "test" directory for the inline code.
+Inline code for verticals are setup with REPL, where each ```index.repl.yaml``` file is considered a block. The ```index.repl``` directory should contain a "source" directory for the inline code.
 
 Use our [AP Java Course](https://github.com/exlskills/ap-java-course) as reference for the optional file structure.
 
 
 ## Index Files
-Each course contains multiple index.yaml files that contain different information for each sublevel. The table below contains a brief description of each attribute and where it is located inside the folder structure.
+Each course contains multiple index.yaml files that contain different information for each sublevel. The table below contains a brief description of each attribute and where it is located inside the folder structure. As shown below, each index.yaml file for the chapter, sequential, and vertical contain an attribute called ```url_name```. This attribute is a crucial component in the ```index.yaml``` file as these "url names" are used when updating the course. If no ```url_name``` is found (i.e. when you first import the course), a new ```url_name``` will be automatically created and will override the existing files (if any).
 
 **Course:**
 
@@ -68,7 +68,7 @@ Each course contains multiple index.yaml files that contain different informatio
     <td>course url_name</td>
     <td>index.yaml</td>
     <td>Required</td>
-    <td>"course"</td>
+    <td>None</td>
   </tr>
   <tr>
     <td>course_image</td>
@@ -192,12 +192,6 @@ Each course contains multiple index.yaml files that contain different informatio
   </tr>
   <tr>
     <td>src_path</td>
-    <td>index.repl</td>
-    <td>Optional</td>
-    <td>None</td>
-  </tr>
-    <tr>
-    <td>test_path</td>
     <td>index.repl</td>
     <td>Optional</td>
     <td>None</td>
