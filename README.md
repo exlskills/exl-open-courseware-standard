@@ -43,7 +43,7 @@ If the vertical contains more than 1 block, the standard format ```{index}_{name
 
 Inline code for verticals are setup with REPL, where each ```index.repl.yaml``` file is considered a block. The ```index.repl``` directory should contain a "source" directory for the inline code.
 
-Use our [AP Java Course](https://github.com/exlskills/ap-java-course) as reference for the optional file structure.
+Use our [AP Java Course](https://github.com/exlskills/course-java-ap) as reference for the optional file structure.
 
 
 ## Index Files
