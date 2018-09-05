@@ -7,37 +7,38 @@ Welcome to the home of EOCS. This standard is currently a work-in-progress. To l
 [EXLskills](https://exlskills.com) is on a mission to change education with an open-source online digital skills learning, certification, and peer-to-peer instruction platform that is committed to offering premium-quality courseware for 100% free via our open-source courseware methodology. Our courses are developed using the content in this repository and are then imported/pushed to [EXLskills.com](https://exlskills.com) with the [eocsutil](https://github.com/exlskills/eocsutil) tool. This process is 100% transparent, free, and open-source.
 
 ## File Structure
-There are two main file structures for EOCS, the default and the optional file structure. The default file structure is designed for simple courses while the optional file structure is designed for courses that are more complex. The folder structures are shown below.
+There are two main file structures for EOCS, the default and the multi-block (directory-per-vertical) file structures. The default file structure is designed for simple courses while the optional file structure is designed for courses that require certain verticals to have multiple blocks. You can also mix the formats within the same course. The two types of folder structures are shown below.
 
-Default:
-
-```
-course
-├── index.yaml
-└── chapter_name (00_chaptername)
-    ├── index.yaml
-    └── sequential_name (00_sequentialname)
-        ├── index.yaml
-        └── vertical_name.md (00_verticalname)
-```
-
-Optional:
+Simple EOCS Course Structure:
 
 ```
 course
 ├── index.yaml
-└── chapter_name (00_chaptername)
+└── 00_Chapter Name
     ├── index.yaml
-    └── sequential_name (00_sequentialname)
+    └── 00_Sequential Name
         ├── index.yaml
-        └── vertical_name (00_verticalname)
+        └── 00_Vertical Name.md
+        └── 01_Second Vertical Name.md
+```
+
+EOCS Course with Vertical Directories (Multiple blocks):
+
+```
+course
+├── index.yaml
+└── 00_Chapter Name
+    ├── index.yaml
+    └── 00_Sequential Name
+        ├── index.yaml
+        └── 00_verticalname
             ├── index.yaml
             ├── index.md
             ├── index.repl
             └── index.repl.yaml
 ```
 
-The optional file structure requires a different style of formatting as well as a separate folder for each vertical.
+The file structure with vertical directories requires a different style of formatting as well as a separate folder for each vertical.
 
 If the vertical contains more than 1 block, the standard format ```{index}_{name}.{ext}``` should be used to ensure that the ordering is correct on import/conversion. 
 
